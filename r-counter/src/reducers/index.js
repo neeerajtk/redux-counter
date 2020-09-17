@@ -6,7 +6,9 @@ import loggedReducer from './isLogged';
 import {combineReducers} from 'redux';
 
 
-const alReducers = combineReducers({
+const allReducers = combineReducers({
     counter: counterReducer,
     isLogged: loggedReducer
 })
+
+export default allReducers;
