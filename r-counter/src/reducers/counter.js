@@ -8,4 +8,4 @@ const counterReducer = (state = 0, action){
 }
 }
 
-export default CounterReducer;
+export default counterReducer;
