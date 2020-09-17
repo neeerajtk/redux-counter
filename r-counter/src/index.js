@@ -1,6 +1,6 @@
-import React,{Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 
 import './index.css';
 import App from './App';
@@ -59,6 +59,9 @@ store.subscribe(() => console.log(store.getState()));
 // DISPATCH - THIS IS WHERE WE CAN EXECURE THE ACTION, ie,  DISPATCH THE ACTION TO THE REDUCER
 
 store.dispatch(increment());
+// logs 1 
+store.dispatch(decrement());
+// logs 0
 
 ReactDOM.render(<App />,document.getElementById('root'));
 
