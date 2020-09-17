@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <h1>Counter Value : {counter} </h1>
-      <button onClick={()=>dispatch(increment())}>+</button>
+      <button onClick={()=>dispatch(increment(5))}>+</button>
       <button onClick={()=>dispatch(decrement())}>-</button>
 
     {isLogged ? <h3>You are currently Logged In</h3> : <h3>You are currently Not logged In</h3> }
