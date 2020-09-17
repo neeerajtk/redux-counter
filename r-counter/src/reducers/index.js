@@ -8,6 +8,7 @@ import {combineReducers} from 'redux';
 
 const allReducers = combineReducers({
     counter: counterReducer,
+    // counter is the name of state we have given now
     isLogged: loggedReducer
 })
 

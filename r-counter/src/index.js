@@ -5,14 +5,20 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux';
 import allReducer from './reducers/index';
+import { Provider } from 'react-redux';
 
 const store = createStore(allReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() 
   // above line is copied from redux dev tools github documentation 
   );
 
+// provider connects the state from store to the entire app 
 
-ReactDOM.render(<App />,document.getElementById('root'));
+ReactDOM.render(
+<Provider>
+  <App />
+</Provider>
+,document.getElementById('root'));
 
 serviceWorker.unregister();
 
