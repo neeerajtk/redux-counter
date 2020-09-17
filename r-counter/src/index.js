@@ -15,7 +15,7 @@ const store = createStore(allReducer,
 // provider connects the state from store to the entire app 
 
 ReactDOM.render(
-<Provider>
+<Provider store={store}>
   <App />
 </Provider>
 ,document.getElementById('root'));
